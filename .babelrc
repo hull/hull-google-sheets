@@ -1,0 +1,5 @@
+{
+  "presets": ["env", "stage-0"],
+  "ignore": [ "specs" ],
+  "plugins": ["react-hot-loader/babel"]
+}

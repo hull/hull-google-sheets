@@ -1,0 +1,10 @@
+{
+  "name": "Google Sheets importer",
+  "description": "Import data from your Google Sheets",
+  "tags": ["incoming", "oneColumn"],
+  "picture": "picture.png",
+  "ui": false,
+  "readme" : "readme.md",
+  "version": "0.2.0",
+  "admin": "admin.html"
+}

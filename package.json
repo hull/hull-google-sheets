@@ -1,0 +1,94 @@
+{
+  "name": "hull-google-sheets",
+  "description": "Import data from Google Sheets",
+  "version": "0.2.0",
+  "homepage": "https://github.com/hull-ships/hull-google-sheets",
+  "license": "MIT",
+  "author": {
+    "name": "Hull",
+    "email": "contact@hull.io",
+    "url": "https://github.com/hull"
+  },
+  "engines": {
+    "node": "6.x",
+    "npm": "3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hull-ships/hull-google-sheets"
+  },
+  "bugs": {
+    "url": "https://github.com/hull-ships/hull-google-sheets/issues"
+  },
+  "scripts": {
+    "ngrok": "ngrok http 8082 --region eu --subdomain hull-google-sheets",
+    "build": "npm run clean && npm run build:server && npm run build:client",
+    "build:client": "NODE_ENV=production ./node_modules/.bin/webpack --config ./webpack.config.js --progress --profile --colors",
+    "build:server": "./node_modules/.bin/babel server -d lib",
+    "start": "node -r newrelic ./lib",
+    "start:dev": "NODE_ENV=development LOG_LEVEL=debug babel-watch -L server",
+    "test": "npm run test:lint && npm run test:units && npm run test:specs",
+    "test:lint": "./node_modules/.bin/eslint server",
+    "test:modules": "npm outdated --depth=0",
+    "test:units": "NODE_ENV=test ./node_modules/.bin/mocha -R spec ./tests/index",
+    "test:specs": "NODE_ENV=test ./node_modules/.bin/mocha -r babel-register -R spec ./specs/*.js",
+    "clean": "./node_modules/.bin/rimraf dist; ./node_modules/.bin/rimraf lib",
+    "update": "./node_modules/.bin/updtr",
+    "watch": "./node_modules/.bin/watch 'clear && npm run test:lint -s && npm run test:units -s && npm run build:client -s' server src",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "hull",
+    "ship",
+    "hull-connector"
+  ],
+  "dependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.10.1",
+    "babel-register": "^6.9.0",
+    "body-parser": "^1.18.2",
+    "css-loader": "^0.28.7",
+    "domready": "^1.0.8",
+    "express": "^4.14.0",
+    "hull": "0.13.0-beta.10",
+    "jwt-simple": "^0.5.1",
+    "lodash": "^4.13.1",
+    "material-ui": "^0.19.4",
+    "newrelic": "^1.28.3",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "progress-bar-webpack-plugin": "^1.10.0",
+    "prop-types": "^15.6.0",
+    "raven": "^0.11.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-select-plus": "^1.0.0-rc.5",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.8.1",
+    "webpack-alternate-require-loader": "^0.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "chai": "^3.5.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "happypack": "^4.0.0",
+    "mocha": "^2.5.3",
+    "react-hot-loader": "^3.1.1",
+    "rimraf": "^2.5.2",
+    "sinon": "^1.17.4",
+    "style-loader": "^0.19.0",
+    "supertest": "^1.2.0",
+    "updtr": "^0.1.15",
+    "watch": "^0.19.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.20.0"
+  }
+}
