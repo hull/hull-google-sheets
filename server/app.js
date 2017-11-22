@@ -32,8 +32,12 @@ export default function (connector, options = {}) {
     return req.hull.client.get("search/user_report/properties").then(
       (properties = {}) => {
         try {
-          console.warn("/schema/fields", Object.keys(properties));
-          res.json(Object.keys(properties));
+          const keys = _.omit(_.keys(properties), "account", "id", "indexed_at", "updated_at");
+          const fields = _.map(keys,
+            p => p.toString().replace(/^traits_/, "")
+          ).concat(["external_id"]).sort();
+          console.warn("/schema/fields", JSON.stringify(fields));
+          res.json(fields);
         } catch (err) {
           const { message, stack } = err || {};
           res.status(500).json({ error: message, stack });
