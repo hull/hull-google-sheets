@@ -32,6 +32,7 @@ export default function (connector, options = {}) {
     return req.hull.client.get("search/user_report/properties").then(
       (properties = {}) => {
         try {
+          console.warn("/schema/fields", Object.keys(properties));
           res.json(Object.keys(properties));
         } catch (err) {
           const { message, stack } = err || {};
