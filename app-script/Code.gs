@@ -1,4 +1,8 @@
-function onOpen(e) {
+function onInstall() {
+  addMenu();
+}
+
+function onOpen() {
   addMenu();
 }
 
@@ -14,14 +18,15 @@ function clearAll() {
 }
 
 function getSourceUrl(path, params) {
-  var url = "https://hull-google-sheets.eu.ngrok.io/";
+  var url = "https://hull-google-sheets.herokuapp.com/";
   if (path) url += path;
   return url;
 }
 
 function showSidebar() {
-  var sidebar = HtmlService.createTemplateFromFile("Sidebar");
-  SpreadsheetApp.getUi().showSidebar(sidebar.evaluate());
+  var sidebar = HtmlService.createTemplateFromFile("Sidebar").evaluate();
+  sidebar.setTitle("Hull");
+  SpreadsheetApp.getUi().showSidebar(sidebar);
 }
 
 
@@ -187,7 +192,7 @@ function importRange(startRow, numRows, mapping) {
 }
 
 function getVal(val) {
-  if (val != null && val.length > 0) return val;
+  if (val != null && val.toString && val.toString().length > 0) return val;
 }
 
 function fetchRows(startRow, numRows, mapping) {
