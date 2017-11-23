@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Oh sheet !</title>
+  <title>Hull Google Sheets</title>
+  <link rel="stylesheet" href="//dd04rofzygnm0.cloudfront.net/releases/master/865f04865d2448286626bac92c518a8f8ea8bafe/stylesheets/neue.css" />
 </head>
 <body>
-  <h1>Hello Token -- hostSecret = <%= hostSecret %></h1>
-  <pre><%= token %></pre>
-  <hr />
-  <pre><%= JSON.stringify(config, " ", 2) %></pre>
+
+<div id="app">
+  <div data-reactroot="">
+    <div class="row">
+      <div class="webhook-url mt-1 col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center">
+              Google Sheets Connector
+            </h3>
+          </div>
+          <div class="panel-body">
+            <div class="mb-1 text-center">
+              <a class="btn btn-primary" target="_blank" href="<%= installUrl %>">
+                <i class="icon icon-download"></i> Install Google Sheet Addon
+              </a>
+            </div>
+            <hr />
+            <div>
+              <h5 class="text-center">Copy and paste this token in your addon settings</h5>
+              <pre class="text-center"><code><%= token %></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

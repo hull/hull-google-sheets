@@ -4,6 +4,11 @@ const HappyPack = require("happypack");
 
 const isProduction = () => process.env.NODE_ENV === "production";
 
+const jsxPlugins = [];
+if (isProduction()) {
+  jsxPlugins.push("react-hot-loader/babel");
+}
+
 let plugins = [
   new HappyPack({
     id: "jsx",
@@ -14,7 +19,7 @@ let plugins = [
         query: {
           babelrc: false,
           presets: [["env", { modules: false }], "stage-0", "react"],
-          plugins: ["react-hot-loader/babel"]
+          plugins: jsxPlugins
         }
       }
     ]
@@ -29,7 +34,7 @@ let plugins = [
   })
 ];
 
-if (isProduction() === "yeah") {
+if (isProduction()) {
   plugins = [
     ...plugins,
     new webpack.optimize.ModuleConcatenationPlugin(),

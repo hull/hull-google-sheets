@@ -1,5 +1,12 @@
-function onOpen() {
-  showSidebar();
+function onOpen(e) {
+  addMenu();
+}
+
+function addMenu() {
+  var ui = SpreadsheetApp.getUi();
+  var menu = ui.createAddonMenu();
+  menu.addItem("Open", "showSidebar")
+  menu.addToUi();
 }
 
 function clearAll() {

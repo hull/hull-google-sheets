@@ -6,7 +6,8 @@ const options = {
   devMode: process.env.NODE_ENV === "development",
   port: process.env.PORT || 8082,
   Hull,
-  skipSignatureValidation: true
+  skipSignatureValidation: true,
+  installUrl: process.env.INSTALL_URL
 };
 
 const connector = new Hull.Connector(options);
