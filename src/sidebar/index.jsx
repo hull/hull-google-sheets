@@ -36,7 +36,6 @@ class App extends React.Component {
     this.stopPollingActiveSheet();
     Service.bootstrap().then(
       state => {
-        console.warn("Thank god, I am bootstrapped !", state);
         this.setState({ loading: false });
         this.startPollingActiveSheet();
         this.setState(state);
