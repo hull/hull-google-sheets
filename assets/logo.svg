@@ -1,21 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="257" height="257" viewBox="0 0 257 257">
-  <defs>
-    <circle id="logo-a" cx="128.5" cy="128.5" r="125"/>
-  </defs>
-  <g fill="none" fill-rule="evenodd">
-    <circle cx="128" cy="128" r="125" fill="#FFF" transform="translate(.5 .5)"/>
-    <mask id="logo-b" fill="#fff">
-      <use xlink:href="#logo-a"/>
-    </mask>
-    <g mask="url(#logo-b)">
-      <g transform="translate(57 30)">
-        <path fill="#23A566" fill-rule="nonzero" d="M143,186.554913 C143,192.87586 137.850702,198 131.498721,198 L11.5012788,198 C5.14929792,198 0,192.87586 0,186.554913 L0,11.4450867 C0,5.12413986 5.14929792,1.15947714e-15 11.5012788,0 L88.6564576,0 L143,55.3896416 L143,186.554913 Z"/>
-        <polygon fill="#1C8F5A" fill-rule="nonzero" points="94 54 142 100 141.858 55.335"/>
-        <path fill="#8ED1B1" fill-rule="nonzero" d="M143,55 L100.40829,55 C94.1076654,55 89,49.9095922 89,43.6302559 L89,0 L143,55 Z"/>
-        <path fill="#FFF" d="M39,118 L105,118 L105,125.03103 L39,125.03103 L39,118 Z M39,135.96897 L105,135.96897 L105,143 L39,143 L39,135.96897 Z"/>
-        <path fill="#FFF" d="M108,161 L34,161 L34,97 L108,97 L108,161 Z M43.1547336,106.142857 L43.1547336,151.857143 L98.8452664,151.857143 L98.8452664,106.142857 L43.1547336,106.142857 Z"/>
-        <polygon fill="#FFF" points="66 102 75 102 75 157 66 157"/>
-      </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="257px" height="257px" viewBox="0 0 257 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>google-sheets/logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="128.5" cy="128.5" r="125.5"></circle>
+        <path d="M9.6,0 L64.0531716,0 L102,38.5703187 L102,132.4 C102,137.701934 97.7019336,142 92.4,142 L9.6,142 C4.2980664,142 1.8907377e-14,137.701934 1.77635684e-15,132.4 L0,9.6 C-6.49299601e-16,4.2980664 4.2980664,2.75030624e-15 9.6,1.77635684e-15 Z" id="path-3"></path>
+        <filter x="-2.0%" y="-0.7%" width="103.9%" height="102.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#28865D" offset="0%"></stop>
+            <stop stop-color="#22A565" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="google-sheets/logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#1D4D35" xlink:href="#path-1"></use>
+        <g id="Group" mask="url(#mask-2)">
+            <g transform="translate(78.000000, 58.000000)">
+                <g id="Rectangle-2" fill="none">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#22A565" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <path d="M99.6036202,36.1016949 L102,38.5703187 L102,70.1900261 L68.137931,36.1016949 L99.6036202,36.1016949 Z" id="Combined-Shape" fill="url(#linearGradient-5)" fill-rule="evenodd"></path>
+                <path d="M26,70 L76,70 L76,115 L26,115 L26,70 Z M32,76 L32,83 L48,83 L48,76 L32,76 Z M32,89 L32,96 L48,96 L48,89 L32,89 Z M32,102 L32,109 L48,109 L48,102 L32,102 Z M54,76 L54,83 L70,83 L70,76 L54,76 Z M54,89 L54,96 L70,96 L70,89 L54,89 Z M54,102 L54,109 L70,109 L70,102 L54,102 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd"></path>
+                <path d="M64,0.000543740272 L92.4,-2.23820962e-13 C97.7019336,-2.24794911e-13 102,4.2980664 102,9.6 C102,9.60018125 102,9.6003625 102,9.60054376 L101.997848,38.0005437 L64,0.000543740272 Z" id="Rectangle-2" fill="#8ED0B0" fill-rule="evenodd" transform="translate(83.000000, 19.000272) scale(-1, -1) translate(-83.000000, -19.000272) "></path>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>
