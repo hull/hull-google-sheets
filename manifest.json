@@ -6,5 +6,12 @@
   "ui": false,
   "readme" : "readme.md",
   "version": "0.2.0",
-  "admin": "admin.html"
+  "tabs": [
+    {
+      "title": "Install",
+      "url": "admin.html",
+      "size": "small",
+      "editable": false
+    }
+  ],
 }
