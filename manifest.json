@@ -8,10 +8,17 @@
   "version": "0.2.0",
   "tabs": [
     {
-      "title": "Install",
+      "title": "Install & Credentials",
       "url": "admin.html",
       "size": "small",
       "editable": false
+    }
+  ],
+  "schedules": [
+    {
+      "url": "/status",
+      "type": "cron",
+      "value": "*/5 * * * *"
     }
   ]
 }

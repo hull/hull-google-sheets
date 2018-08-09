@@ -10,7 +10,7 @@
     "url": "https://github.com/hull"
   },
   "engines": {
-    "node": "6.x",
+    "node": "8.10.x",
     "npm": "3.x"
   },
   "repository": {
