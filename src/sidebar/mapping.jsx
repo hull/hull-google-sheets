@@ -28,10 +28,6 @@ class Mapping extends React.Component {
     this.props.onChange(mapping);
   }
 
-  toggleEnabled(idx, e) {
-    this.updateMapping(idx, { enabled: e.target.checked })
-  }
-
   updateHullField = (idx, e) => {
     const hullField = e ? e.value : null;
     return this.updateMapping(idx, { hullField, enabled: !!hullField });
@@ -79,7 +75,6 @@ class Mapping extends React.Component {
           {mappings.map(([colName, { enabled, hullField = "" }], idx) => (
           <div key={`mapping-${idx}`} style={{paddingBottom: 10}}>
             <label htmlFor={`enabled_${idx}`} className={hullField ? "" : "gray"} style={{ display: 'block'}}>
-              <input type="checkbox" checked={enabled} id={`enabled_${idx}`} onChange={this.toggleEnabled.bind(this, idx)} />
               {colName}
             </label>
             <Creatable value={hullField}
