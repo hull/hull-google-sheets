@@ -48,7 +48,7 @@ It involves :
 
 - run the connector locally
 - paste the content of the `app-script` folder in the script editor section of a new Google Sheet
-- change the addres of the static assets `sourceUrl` in the Code.gs file to point to your local server (need to find a way to make this more seamless
+- change the address of the static assets `sourceUrl` in the Code.gs file to point to your local server (need to find a way to make this more seamless)
 
 Committing changes :
 
@@ -56,11 +56,11 @@ Committing changes :
 
 ## Deploying
 
-If the changes only involves the Connector's Server side code and/or UI, then it's the same flow as other connectors.
+If the changes only involves the Connector's Server side code and/or UI, then it's the same flow as other connectors, no need to publish a new version on Google Marketplace.
 
 If there are changes on the AppScript code, then you need to publish a new version of the add-on on the Google Marketplace.
 
 - Connect as accounts@hull.io and go to https://script.google.com
 - Open the project called `Hull Sheets importer`
 - Report the changes to the `app-script` files in the script editor
-- Follow the publication insrtuctions described here https://developers.google.com/gsuite/add-ons/how-tos/manage-addons in the section called `Update your editor add-on`
+- Follow the publication instructions described here https://developers.google.com/gsuite/add-ons/how-tos/manage-addons in the section called `Update your editor add-on`
