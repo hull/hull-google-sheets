@@ -1,7 +1,5 @@
 # Hull Google Sheets Importer
 
-## Using
-
 ## Developing
 
 - Fork
