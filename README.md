@@ -37,7 +37,7 @@ The development flow is very similar to any other connector.
 
 The connector also has a server side component that exposes ther following endpoints :
 
-- `/schema/fields` exposes the list availeble attributes in the Organization. It is used in the UI to populate the select options in the columns mapper.
+- `/schema/fields` exposes the list available attributes in the Organization. It is used in the UI to populate the select options in the columns mapper.
 
 - `/import` is hit by the AppScript `importRange` method to perform the actual data import.
 
