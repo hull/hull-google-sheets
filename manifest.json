@@ -1,7 +1,7 @@
 {
   "name": "Google Sheets importer",
   "description": "Import data from your Google Sheets",
-  "tags": ["incoming", "oneColumn", "first-install"],
+  "tags": ["incoming", "oneColumn", "first-install", "single-install"],
   "picture": "picture.png",
   "ui": false,
   "readme" : "readme.md",
