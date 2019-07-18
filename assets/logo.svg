@@ -1,1 +1,28 @@
-<svg height="257" viewBox="0 0 257 257" width="257" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="128.5" cy="128.5" r="125.5"/><path id="b" d="m9.6 0h54.4531716l37.9468284 38.5703187v93.8296813c0 5.301934-4.2980664 9.6-9.6 9.6h-82.8c-5.3019336 0-9.6-4.298066-9.6-9.6v-122.8c0-5.3019336 4.2980664-9.6 9.6-9.6z"/><filter id="c" height="102.8%" width="103.9%" x="-2%" y="-.7%"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/><feColorMatrix in="shadowBlurOuter1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"/></filter><linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0" stop-color="#28865d"/><stop offset="1" stop-color="#22a565"/></linearGradient><mask id="e" fill="#fff"><use fill="none" xlink:href="#a"/></mask></defs><g fill="none" fill-rule="evenodd"><use fill="#1d4d35" xlink:href="#a"/><g mask="url(#e)"><g transform="translate(78 58)"><g fill="none"><use fill="#000" filter="url(#c)" xlink:href="#b"/><use fill="#22a565" fill-rule="evenodd" xlink:href="#b"/></g><g fill-rule="evenodd"><path d="m99.6036202 36.1016949 2.3963798 2.4686238v31.6197074l-33.862069-34.0883312z" fill="url(#d)"/><path d="m26 70h50v45h-50zm6 6v7h16v-7zm0 13v7h16v-7zm0 13v7h16v-7zm22-26v7h16v-7zm0 13v7h16v-7zm0 13v7h16v-7z" fill="#fff"/><path d="m64 .00054374 28.4-.00054374c5.3019336 0 9.6 4.2980664 9.6 9.6v.00054376l-.002152 28.39999994z" fill="#8ed0b0" transform="matrix(-1 0 0 -1 166 38.000544)"/></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="257px" height="257px" viewBox="0 0 257 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>google-sheets/logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M87.6,58 L142.053172,58 L180,96.5703187 L180,190.4 C180,195.701934 175.701934,200 170.4,200 L87.6,200 C82.2980664,200 78,195.701934 78,190.4 L78,67.6 C78,62.2980664 82.2980664,58 87.6,58 Z" id="path-1"></path>
+        <filter x="-2.0%" y="-0.7%" width="103.9%" height="102.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#28865D" offset="0%"></stop>
+            <stop stop-color="#22A565" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="google-sheets/logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#1D4D35" x="0" y="0" width="257" height="257"></rect>
+        <g id="Rectangle-2">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#22A565" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <path d="M177.60362,94.1016949 L180,96.5703187 L180,128.190026 L146.137931,94.1016949 L177.60362,94.1016949 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+        <path d="M104,128 L154,128 L154,173 L104,173 L104,128 Z M110,134 L110,141 L126,141 L126,134 L110,134 Z M110,147 L110,154 L126,154 L126,147 L110,147 Z M110,160 L110,167 L126,167 L126,160 L110,160 Z M132,134 L132,141 L148,141 L148,134 L132,134 Z M132,147 L132,154 L148,154 L148,147 L132,147 Z M132,160 L132,167 L148,167 L148,160 L132,160 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <path d="M142,58.0005437 L170.4,58 C175.701934,58 180,62.2980664 180,67.6 C180,67.6001813 180,67.6003625 180,67.6005438 L179.997848,96.0005437 L142,58.0005437 Z" id="Rectangle-2" fill="#8ED0B0" transform="translate(161.000000, 77.000272) scale(-1, -1) translate(-161.000000, -77.000272) "></path>
+    </g>
+</svg>
