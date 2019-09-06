@@ -10,8 +10,8 @@ class Settings extends React.Component {
   }
 
   handleTokenChange(e) {
-    const hullToken = e.target.value;
-    this.setState({ hullToken });
+    const hullToken = e.target.value ? e.target.value.trim() : e.target.value;
+    this.setState({ hullToken: hullToken });
   }
 
   handleSaveSettings(e) {

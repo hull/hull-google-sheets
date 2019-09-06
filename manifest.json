@@ -1,10 +1,24 @@
 {
   "name": "Google Sheets importer",
   "description": "Import data from your Google Sheets",
-  "tags": ["incoming", "oneColumn"],
+  "tags": ["incoming", "oneColumn", "first-install", "single-install"],
   "picture": "picture.png",
   "ui": false,
   "readme" : "readme.md",
   "version": "0.2.0",
-  "admin": "admin.html"
+  "tabs": [
+    {
+      "title": "Install & Credentials",
+      "url": "admin.html",
+      "size": "small",
+      "editable": false
+    }
+  ],
+  "schedules": [
+    {
+      "url": "/status",
+      "type": "cron",
+      "value": "*/5 * * * *"
+    }
+  ]
 }

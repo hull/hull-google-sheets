@@ -1,8 +1,10 @@
 import express from "express";
-import devMode from "./dev-mode";
 import jwt from "jwt-simple";
 import _ from "lodash";
 import bodyParser from "body-parser";
+
+import devMode from "./dev-mode";
+import statusCheckAction from "./status";
 
 export default function (connector, options = {}) {
   const app = express();
@@ -11,6 +13,7 @@ export default function (connector, options = {}) {
   const { hostSecret, installUrl } = options;
   connector.setupApp(app);
 
+  app.post("/status", statusCheckAction)
   app.post("/import", bodyParser.json(), (req, res) => {
     const hull = req.hull.client;
     if (req.body && req.body.rows) {
