@@ -152,7 +152,9 @@ function importData() {
   var chunk = 1;
   var fetched;
   const stats = { imported: 0, skipped: 0, empty: 0 };
+  var updateCounter = 1;
 
+  setActiveSheetImportProgress(stats);
   const mapping = getActiveSheetMapping().map(function(m) {
     if (m) return m.hullField;
   });
@@ -165,7 +167,10 @@ function importData() {
     Object.keys(stats).forEach(function(k) {
       stats[k] += (ret.stats[k] || 0);
     });
-    setActiveSheetImportProgress(stats);
+    if (stats.imported / 1000 >= updateCounter) {
+      setActiveSheetImportProgress(stats);
+      updateCounter += 1;
+    }
   }
 
   setActiveSheetImportProgress({});

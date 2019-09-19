@@ -25,6 +25,10 @@ Google developers Add-ons documentation is also a good starting point to underst
 
 https://developers.google.com/gsuite/add-ons/overview
 
+To access the current processes being run by the script, while you are in the script editor, you can hit the view / executions menu. You will be able to manage the processes in that place.
+Note that this script is local, and you won't be able to access all the processes being run on the actual script app registered by Hull.
+If you want to access this monitor dashboard, you will need the right credentials for the account that registered the app.
+
 ### Connector UI
 
 The UI exposed by the connector is implemented as a React app loaded in the Sidebar.
