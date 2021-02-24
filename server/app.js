@@ -13,7 +13,7 @@ export default function (connector, options = {}) {
   const { hostSecret, installUrl } = options;
   connector.setupApp(app);
 
-  app.post("/status", statusCheckAction)
+  app.post("/status", statusCheckAction);
   app.post("/import", bodyParser.json(), (req, res) => {
     const hull = req.hull.client;
     if (req.body && req.body.rows) {

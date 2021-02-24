@@ -6,7 +6,7 @@ const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 const AssetsWebpackPlugin = require("assets-webpack-plugin");
 const config = require("../webpack.config");
 
-export default function devMode(app, options = {}) {
+export default function devMode(app, /* options = {} */) {
   const entry = _.reduce(
     config.entry,
     (m, v, k) => {
@@ -103,5 +103,5 @@ export default function devMode(app, options = {}) {
   //   );
   // }
 
-    return app;
+  return app;
 }
